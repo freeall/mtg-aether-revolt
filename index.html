@@ -36,15 +36,24 @@
       }
       .card {
         display: none;
-        width: 100%;
+        max-width: 100%;
         max-height: 100%;
+        margin: 0 auto;
       }
       .card.shown {
-        display: block;
+        display: inline;
+      }
+      .portrait .card {
+        height: 100%;
+      }
+      .landscape .card {
+        width: 100%;
       }
       .card-en, .card-es {
         flex: 1;
         height: 100%;
+        display: flex;
+        align-items: center;
       }
       #number {
         display: block;
@@ -271,7 +280,6 @@
             <img id="en182" class="card" src="/en/182.jpg">
             <img id="en183" class="card" src="/en/183.jpg">
             <img id="en184" class="card" src="/en/184.jpg">
-     
           </div>
 <!--           <div class="card-es">
             <img id="es001" class="card" src="/es/001.png">
@@ -479,6 +487,11 @@
         })
       })()
     }
+
+    var $doc = document.documentElement
+    document.body.className = $doc.offsetWidth > $doc.offsetHeight
+      ? 'portrait'
+      : 'landscape';
 
     var $clear = document.querySelector('.input .clear')
     $clear.addEventListener('click', () => {
