@@ -757,7 +757,7 @@
       (() => {
         var $input = inputs[i]
         var number = $input.innerHTML
-        $input.addEventListener('click', () => {
+        $input.addEventListener('touchend', () => {
           inputNumber = inputNumber + number
           change()
         })
