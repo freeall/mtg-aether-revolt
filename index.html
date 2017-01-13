@@ -752,26 +752,28 @@
     var $doc = document.documentElement
     var inputNumber = ''
     var $clear = document.querySelector('.input-actions .clear')
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    var clickName = isMobile ? 'touchstart' : 'click';
 
     for (var i = 0; i < inputs.length; i++) {
       (() => {
         var $input = inputs[i]
         var number = $input.innerHTML
-        $input.addEventListener('touchend', () => {
+        $input.addEventListener(clickName, () => {
           inputNumber = inputNumber + number
           change()
         })
       })()
     }
 
-    $chooseAetherRevolt.addEventListener('click', function () {
+    $chooseAetherRevolt.addEventListener(clickName, function () {
       $chooseAetherRevolt.className = 'field active'
       $chooseKaladesh.className = 'field'
       set = 'aetherrevolt'
       inputNumber = ''
       change()
     })
-    $chooseKaladesh.addEventListener('click', function () {
+    $chooseKaladesh.addEventListener(clickName, function () {
       $chooseKaladesh.className = 'field active'
       $chooseAetherRevolt.className = 'field'
       set = 'kaladesh'
@@ -783,7 +785,7 @@
       ? 'portrait'
       : 'landscape'
 
-    $clear.addEventListener('click', () => {
+    $clear.addEventListener(clickName, () => {
       inputNumber = ''
       change()
     })
