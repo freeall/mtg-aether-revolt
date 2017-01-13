@@ -86,6 +86,10 @@
         background-color: green;
         color: black;
       }
+      .field.clicked {
+        background-color: maroon;
+        border-color: maroon;
+      }
       .field-colletors-number {
         flex: 1;
         color: white;
@@ -759,35 +763,47 @@
       (() => {
         var $input = inputs[i]
         var number = $input.innerHTML
-        $input.addEventListener(clickName, () => {
+        $input.addEventListener(clickName, (e) => {
           inputNumber = inputNumber + number
           change()
+          flash(e.target)
         })
       })()
     }
 
-    $chooseAetherRevolt.addEventListener(clickName, function () {
+    function flash (elem) {
+      var oldClass = elem.className
+      elem.className += ' clicked'
+      setTimeout(() => {
+        elem.className = oldClass
+      }, 100)
+    }
+
+    $chooseAetherRevolt.addEventListener(clickName, function (e) {
       $chooseAetherRevolt.className = 'field active'
       $chooseKaladesh.className = 'field'
       set = 'aetherrevolt'
       inputNumber = ''
       change()
+      flash(e.target)
     })
-    $chooseKaladesh.addEventListener(clickName, function () {
+    $chooseKaladesh.addEventListener(clickName, function (e) {
       $chooseKaladesh.className = 'field active'
       $chooseAetherRevolt.className = 'field'
       set = 'kaladesh'
       inputNumber = ''
       change()
+      flash(e.target)
     })
 
     document.body.className = $doc.offsetWidth > $doc.offsetHeight
       ? 'portrait'
       : 'landscape'
 
-    $clear.addEventListener(clickName, () => {
+    $clear.addEventListener(clickName, (e) => {
       inputNumber = ''
       change()
+      flash(e.target)
     })
 
     document.addEventListener('keyup', (e) => {
