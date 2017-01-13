@@ -10,6 +10,10 @@
         box-sizing: border-box;
       }
 
+      html {
+        font-size: 20px;
+      }
+
       body {
         margin: 0;
         background-color: black;
@@ -78,9 +82,12 @@
         color: green;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 20px;
         font-weight: bold;
         text-align: center;
+        align-self: center;
+      }
+      .icon {
+        height: 0.9rem;
       }
       .field.active {
         background-color: green;
@@ -726,8 +733,12 @@
       <div class="wrapper-bottom">
         <div class="input-actions">
           <div class="field-colletors-number"></div>
-          <div class="field active" id="choose-aetherrevolt">Aether Revolt</div>
-          <div class="field" id="choose-kaladesh">Kaladesh</div>
+          <div class="field active" id="choose-aetherrevolt">
+            <img class="icon" src="/icons/aetherrevolt.png">
+          </div>
+          <div class="field" id="choose-kaladesh">
+            <img class="icon" src="/icons/kaladesh.png">
+          </div>
           <div class="field clear">X</div>
         </div>
         <div class="input-numbers">
