@@ -33,7 +33,7 @@
       .card-wrapper{
         flex: 1;
         display: flex;
-        height: calc(100vh - 45px);
+        height: calc(100vh - 90px);
         width: 100%;
       }
       .card {
@@ -84,8 +84,11 @@
         background-color: green;
         color: black;
       }
-      .field-empty {
+      .field-colletors-number {
         flex: 1;
+        color: white;
+        align-self: center;
+        text-align: center;
       }
       .input-numbers .field {
         flex: 1;
@@ -716,7 +719,7 @@
       </div>
       <div class="wrapper-bottom">
         <div class="input-actions">
-          <div class="field-empty"></div>
+          <div class="field-colletors-number"></div>
           <div class="field active" id="choose-aetherrevolt">Aether Revolt</div>
           <div class="field" id="choose-kaladesh">Kaladesh</div>
           <div class="field clear">X</div>
@@ -741,6 +744,7 @@
     var $shownEs
     var $chooseKaladesh = document.querySelector('#choose-kaladesh')
     var $chooseAetherRevolt = document.querySelector('#choose-aetherrevolt')
+    var $fieldCollectorsNumber = document.querySelector('.field-colletors-number');
     var inputs = document.querySelectorAll('.input-numbers .number')
     var set = 'aetherrevolt'
     var $doc = document.documentElement
@@ -800,9 +804,14 @@
 
       var number = parseInt(inputNumber)
 
-      if (isNaN(number)) return
+      if (isNaN(number)) {
+        $fieldCollectorsNumber.innerText = '';
+        return
+      }
       if (number < 10) number = '00' + number
       if (10 <= number && number < 100) number = '0' + number
+
+      $fieldCollectorsNumber.innerText = number;
 
       var $imageEn = document.getElementById(set + '-en' + number)
       var $imageEs = document.getElementById(set + '-es' + number)
