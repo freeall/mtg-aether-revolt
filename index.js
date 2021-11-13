@@ -6,6 +6,7 @@ var app = express()
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/index.html'))
+  // TODO: set maxAge 1 day
 })
 app.use('/icons', serveStatic(path.join(__dirname, '/icons'), { maxAge: '1y'}))
 app.use('/kaladesh/en', serveStatic(path.join(__dirname, '/kaladesh/en'), { maxAge: '1y' }))

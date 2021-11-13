@@ -36,11 +36,13 @@
       .wrapper-bottom {
         width: 100%;
       }
-      .card-wrapper{
+      .card-wrapper {
         flex: 1;
         display: flex;
         height: calc(100vh - 90px);
         width: 100%;
+        align-items: center;
+
       }
       .card {
         display: none;
@@ -57,12 +59,6 @@
       .landscape .card {
         width: 100%;
       }
-      .card-en, .card-es {
-        flex: 1;
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
       #number {
         display: block;
       }
@@ -77,6 +73,9 @@
         padding-left: 10px;
         padding-right: 10px;
       }
+      .input-sets {
+        display: flex;
+      }
       .field {
         border: 1px solid green;
         color: green;
@@ -88,6 +87,7 @@
       }
       .icon {
         height: 0.9rem;
+        pointer-events: none;
       }
       .field.active {
         background-color: green;
@@ -111,633 +111,18 @@
   <body>
     <div class="wrapper">
       <div class="wrapper-top">
-        <div class="card-wrapper">
-          <div class="card-en">
-            <img id="aetherrevolt-en001" class="card" src="/aetherrevolt/en/001.jpg">
-            <img id="aetherrevolt-en002" class="card" src="/aetherrevolt/en/002.jpg">
-            <img id="aetherrevolt-en003" class="card" src="/aetherrevolt/en/003.jpg">
-            <img id="aetherrevolt-en004" class="card" src="/aetherrevolt/en/004.jpg">
-            <img id="aetherrevolt-en005" class="card" src="/aetherrevolt/en/005.jpg">
-            <img id="aetherrevolt-en006" class="card" src="/aetherrevolt/en/006.jpg">
-            <img id="aetherrevolt-en007" class="card" src="/aetherrevolt/en/007.jpg">
-            <img id="aetherrevolt-en008" class="card" src="/aetherrevolt/en/008.jpg">
-            <img id="aetherrevolt-en009" class="card" src="/aetherrevolt/en/009.jpg">
-            <img id="aetherrevolt-en010" class="card" src="/aetherrevolt/en/010.jpg">
-            <img id="aetherrevolt-en011" class="card" src="/aetherrevolt/en/011.jpg">
-            <img id="aetherrevolt-en012" class="card" src="/aetherrevolt/en/012.jpg">
-            <img id="aetherrevolt-en013" class="card" src="/aetherrevolt/en/013.jpg">
-            <img id="aetherrevolt-en014" class="card" src="/aetherrevolt/en/014.jpg">
-            <img id="aetherrevolt-en015" class="card" src="/aetherrevolt/en/015.jpg">
-            <img id="aetherrevolt-en016" class="card" src="/aetherrevolt/en/016.jpg">
-            <img id="aetherrevolt-en017" class="card" src="/aetherrevolt/en/017.jpg">
-            <img id="aetherrevolt-en018" class="card" src="/aetherrevolt/en/018.jpg">
-            <img id="aetherrevolt-en019" class="card" src="/aetherrevolt/en/019.jpg">
-            <img id="aetherrevolt-en020" class="card" src="/aetherrevolt/en/020.jpg">
-            <img id="aetherrevolt-en021" class="card" src="/aetherrevolt/en/021.jpg">
-            <img id="aetherrevolt-en022" class="card" src="/aetherrevolt/en/022.jpg">
-            <img id="aetherrevolt-en023" class="card" src="/aetherrevolt/en/023.jpg">
-            <img id="aetherrevolt-en024" class="card" src="/aetherrevolt/en/024.jpg">
-            <img id="aetherrevolt-en025" class="card" src="/aetherrevolt/en/025.jpg">
-            <img id="aetherrevolt-en026" class="card" src="/aetherrevolt/en/026.jpg">
-            <img id="aetherrevolt-en027" class="card" src="/aetherrevolt/en/027.jpg">
-            <img id="aetherrevolt-en028" class="card" src="/aetherrevolt/en/028.jpg">
-            <img id="aetherrevolt-en029" class="card" src="/aetherrevolt/en/029.jpg">
-            <img id="aetherrevolt-en030" class="card" src="/aetherrevolt/en/030.jpg">
-            <img id="aetherrevolt-en031" class="card" src="/aetherrevolt/en/031.jpg">
-            <img id="aetherrevolt-en032" class="card" src="/aetherrevolt/en/032.jpg">
-            <img id="aetherrevolt-en033" class="card" src="/aetherrevolt/en/033.jpg">
-            <img id="aetherrevolt-en034" class="card" src="/aetherrevolt/en/034.jpg">
-            <img id="aetherrevolt-en035" class="card" src="/aetherrevolt/en/035.jpg">
-            <img id="aetherrevolt-en036" class="card" src="/aetherrevolt/en/036.jpg">
-            <img id="aetherrevolt-en037" class="card" src="/aetherrevolt/en/037.jpg">
-            <img id="aetherrevolt-en038" class="card" src="/aetherrevolt/en/038.jpg">
-            <img id="aetherrevolt-en039" class="card" src="/aetherrevolt/en/039.jpg">
-            <img id="aetherrevolt-en040" class="card" src="/aetherrevolt/en/040.jpg">
-            <img id="aetherrevolt-en041" class="card" src="/aetherrevolt/en/041.jpg">
-            <img id="aetherrevolt-en042" class="card" src="/aetherrevolt/en/042.jpg">
-            <img id="aetherrevolt-en043" class="card" src="/aetherrevolt/en/043.jpg">
-            <img id="aetherrevolt-en044" class="card" src="/aetherrevolt/en/044.jpg">
-            <img id="aetherrevolt-en045" class="card" src="/aetherrevolt/en/045.jpg">
-            <img id="aetherrevolt-en046" class="card" src="/aetherrevolt/en/046.jpg">
-            <img id="aetherrevolt-en047" class="card" src="/aetherrevolt/en/047.jpg">
-            <img id="aetherrevolt-en048" class="card" src="/aetherrevolt/en/048.jpg">
-            <img id="aetherrevolt-en049" class="card" src="/aetherrevolt/en/049.jpg">
-            <img id="aetherrevolt-en050" class="card" src="/aetherrevolt/en/050.jpg">
-            <img id="aetherrevolt-en051" class="card" src="/aetherrevolt/en/051.jpg">
-            <img id="aetherrevolt-en052" class="card" src="/aetherrevolt/en/052.jpg">
-            <img id="aetherrevolt-en053" class="card" src="/aetherrevolt/en/053.jpg">
-            <img id="aetherrevolt-en054" class="card" src="/aetherrevolt/en/054.jpg">
-            <img id="aetherrevolt-en055" class="card" src="/aetherrevolt/en/055.jpg">
-            <img id="aetherrevolt-en056" class="card" src="/aetherrevolt/en/056.jpg">
-            <img id="aetherrevolt-en057" class="card" src="/aetherrevolt/en/057.jpg">
-            <img id="aetherrevolt-en058" class="card" src="/aetherrevolt/en/058.jpg">
-            <img id="aetherrevolt-en059" class="card" src="/aetherrevolt/en/059.jpg">
-            <img id="aetherrevolt-en060" class="card" src="/aetherrevolt/en/060.jpg">
-            <img id="aetherrevolt-en061" class="card" src="/aetherrevolt/en/061.jpg">
-            <img id="aetherrevolt-en062" class="card" src="/aetherrevolt/en/062.jpg">
-            <img id="aetherrevolt-en063" class="card" src="/aetherrevolt/en/063.jpg">
-            <img id="aetherrevolt-en064" class="card" src="/aetherrevolt/en/064.jpg">
-            <img id="aetherrevolt-en065" class="card" src="/aetherrevolt/en/065.jpg">
-            <img id="aetherrevolt-en066" class="card" src="/aetherrevolt/en/066.jpg">
-            <img id="aetherrevolt-en067" class="card" src="/aetherrevolt/en/067.jpg">
-            <img id="aetherrevolt-en068" class="card" src="/aetherrevolt/en/068.jpg">
-            <img id="aetherrevolt-en069" class="card" src="/aetherrevolt/en/069.jpg">
-            <img id="aetherrevolt-en070" class="card" src="/aetherrevolt/en/070.jpg">
-            <img id="aetherrevolt-en071" class="card" src="/aetherrevolt/en/071.jpg">
-            <img id="aetherrevolt-en072" class="card" src="/aetherrevolt/en/072.jpg">
-            <img id="aetherrevolt-en073" class="card" src="/aetherrevolt/en/073.jpg">
-            <img id="aetherrevolt-en074" class="card" src="/aetherrevolt/en/074.jpg">
-            <img id="aetherrevolt-en075" class="card" src="/aetherrevolt/en/075.jpg">
-            <img id="aetherrevolt-en076" class="card" src="/aetherrevolt/en/076.jpg">
-            <img id="aetherrevolt-en077" class="card" src="/aetherrevolt/en/077.jpg">
-            <img id="aetherrevolt-en078" class="card" src="/aetherrevolt/en/078.jpg">
-            <img id="aetherrevolt-en079" class="card" src="/aetherrevolt/en/079.jpg">
-            <img id="aetherrevolt-en080" class="card" src="/aetherrevolt/en/080.jpg">
-            <img id="aetherrevolt-en081" class="card" src="/aetherrevolt/en/081.jpg">
-            <img id="aetherrevolt-en082" class="card" src="/aetherrevolt/en/082.jpg">
-            <img id="aetherrevolt-en083" class="card" src="/aetherrevolt/en/083.jpg">
-            <img id="aetherrevolt-en084" class="card" src="/aetherrevolt/en/084.jpg">
-            <img id="aetherrevolt-en085" class="card" src="/aetherrevolt/en/085.jpg">
-            <img id="aetherrevolt-en086" class="card" src="/aetherrevolt/en/086.jpg">
-            <img id="aetherrevolt-en087" class="card" src="/aetherrevolt/en/087.jpg">
-            <img id="aetherrevolt-en088" class="card" src="/aetherrevolt/en/088.jpg">
-            <img id="aetherrevolt-en089" class="card" src="/aetherrevolt/en/089.jpg">
-            <img id="aetherrevolt-en090" class="card" src="/aetherrevolt/en/090.jpg">
-            <img id="aetherrevolt-en091" class="card" src="/aetherrevolt/en/091.jpg">
-            <img id="aetherrevolt-en092" class="card" src="/aetherrevolt/en/092.jpg">
-            <img id="aetherrevolt-en093" class="card" src="/aetherrevolt/en/093.jpg">
-            <img id="aetherrevolt-en094" class="card" src="/aetherrevolt/en/094.jpg">
-            <img id="aetherrevolt-en095" class="card" src="/aetherrevolt/en/095.jpg">
-            <img id="aetherrevolt-en096" class="card" src="/aetherrevolt/en/096.jpg">
-            <img id="aetherrevolt-en097" class="card" src="/aetherrevolt/en/097.jpg">
-            <img id="aetherrevolt-en098" class="card" src="/aetherrevolt/en/098.jpg">
-            <img id="aetherrevolt-en099" class="card" src="/aetherrevolt/en/099.jpg">
-            <img id="aetherrevolt-en100" class="card" src="/aetherrevolt/en/100.jpg">
-            <img id="aetherrevolt-en101" class="card" src="/aetherrevolt/en/101.jpg">
-            <img id="aetherrevolt-en102" class="card" src="/aetherrevolt/en/102.jpg">
-            <img id="aetherrevolt-en103" class="card" src="/aetherrevolt/en/103.jpg">
-            <img id="aetherrevolt-en104" class="card" src="/aetherrevolt/en/104.jpg">
-            <img id="aetherrevolt-en105" class="card" src="/aetherrevolt/en/105.jpg">
-            <img id="aetherrevolt-en106" class="card" src="/aetherrevolt/en/106.jpg">
-            <img id="aetherrevolt-en107" class="card" src="/aetherrevolt/en/107.jpg">
-            <img id="aetherrevolt-en108" class="card" src="/aetherrevolt/en/108.jpg">
-            <img id="aetherrevolt-en109" class="card" src="/aetherrevolt/en/109.jpg">
-            <img id="aetherrevolt-en110" class="card" src="/aetherrevolt/en/110.jpg">
-            <img id="aetherrevolt-en111" class="card" src="/aetherrevolt/en/111.jpg">
-            <img id="aetherrevolt-en112" class="card" src="/aetherrevolt/en/112.jpg">
-            <img id="aetherrevolt-en113" class="card" src="/aetherrevolt/en/113.jpg">
-            <img id="aetherrevolt-en114" class="card" src="/aetherrevolt/en/114.jpg">
-            <img id="aetherrevolt-en115" class="card" src="/aetherrevolt/en/115.jpg">
-            <img id="aetherrevolt-en116" class="card" src="/aetherrevolt/en/116.jpg">
-            <img id="aetherrevolt-en117" class="card" src="/aetherrevolt/en/117.jpg">
-            <img id="aetherrevolt-en118" class="card" src="/aetherrevolt/en/118.jpg">
-            <img id="aetherrevolt-en119" class="card" src="/aetherrevolt/en/119.jpg">
-            <img id="aetherrevolt-en120" class="card" src="/aetherrevolt/en/120.jpg">
-            <img id="aetherrevolt-en121" class="card" src="/aetherrevolt/en/121.jpg">
-            <img id="aetherrevolt-en122" class="card" src="/aetherrevolt/en/122.jpg">
-            <img id="aetherrevolt-en123" class="card" src="/aetherrevolt/en/123.jpg">
-            <img id="aetherrevolt-en124" class="card" src="/aetherrevolt/en/124.jpg">
-            <img id="aetherrevolt-en125" class="card" src="/aetherrevolt/en/125.jpg">
-            <img id="aetherrevolt-en126" class="card" src="/aetherrevolt/en/126.jpg">
-            <img id="aetherrevolt-en127" class="card" src="/aetherrevolt/en/127.jpg">
-            <img id="aetherrevolt-en128" class="card" src="/aetherrevolt/en/128.jpg">
-            <img id="aetherrevolt-en129" class="card" src="/aetherrevolt/en/129.jpg">
-            <img id="aetherrevolt-en130" class="card" src="/aetherrevolt/en/130.jpg">
-            <img id="aetherrevolt-en131" class="card" src="/aetherrevolt/en/131.jpg">
-            <img id="aetherrevolt-en132" class="card" src="/aetherrevolt/en/132.jpg">
-            <img id="aetherrevolt-en133" class="card" src="/aetherrevolt/en/133.jpg">
-            <img id="aetherrevolt-en134" class="card" src="/aetherrevolt/en/134.jpg">
-            <img id="aetherrevolt-en135" class="card" src="/aetherrevolt/en/135.jpg">
-            <img id="aetherrevolt-en136" class="card" src="/aetherrevolt/en/136.jpg">
-            <img id="aetherrevolt-en137" class="card" src="/aetherrevolt/en/137.jpg">
-            <img id="aetherrevolt-en138" class="card" src="/aetherrevolt/en/138.jpg">
-            <img id="aetherrevolt-en139" class="card" src="/aetherrevolt/en/139.jpg">
-            <img id="aetherrevolt-en140" class="card" src="/aetherrevolt/en/140.jpg">
-            <img id="aetherrevolt-en141" class="card" src="/aetherrevolt/en/141.jpg">
-            <img id="aetherrevolt-en142" class="card" src="/aetherrevolt/en/142.jpg">
-            <img id="aetherrevolt-en143" class="card" src="/aetherrevolt/en/143.jpg">
-            <img id="aetherrevolt-en144" class="card" src="/aetherrevolt/en/144.jpg">
-            <img id="aetherrevolt-en145" class="card" src="/aetherrevolt/en/145.jpg">
-            <img id="aetherrevolt-en146" class="card" src="/aetherrevolt/en/146.jpg">
-            <img id="aetherrevolt-en147" class="card" src="/aetherrevolt/en/147.jpg">
-            <img id="aetherrevolt-en148" class="card" src="/aetherrevolt/en/148.jpg">
-            <img id="aetherrevolt-en149" class="card" src="/aetherrevolt/en/149.jpg">
-            <img id="aetherrevolt-en150" class="card" src="/aetherrevolt/en/150.jpg">
-            <img id="aetherrevolt-en151" class="card" src="/aetherrevolt/en/151.jpg">
-            <img id="aetherrevolt-en152" class="card" src="/aetherrevolt/en/152.jpg">
-            <img id="aetherrevolt-en153" class="card" src="/aetherrevolt/en/153.jpg">
-            <img id="aetherrevolt-en154" class="card" src="/aetherrevolt/en/154.jpg">
-            <img id="aetherrevolt-en155" class="card" src="/aetherrevolt/en/155.jpg">
-            <img id="aetherrevolt-en156" class="card" src="/aetherrevolt/en/156.jpg">
-            <img id="aetherrevolt-en157" class="card" src="/aetherrevolt/en/157.jpg">
-            <img id="aetherrevolt-en158" class="card" src="/aetherrevolt/en/158.jpg">
-            <img id="aetherrevolt-en159" class="card" src="/aetherrevolt/en/159.jpg">
-            <img id="aetherrevolt-en160" class="card" src="/aetherrevolt/en/160.jpg">
-            <img id="aetherrevolt-en161" class="card" src="/aetherrevolt/en/161.jpg">
-            <img id="aetherrevolt-en162" class="card" src="/aetherrevolt/en/162.jpg">
-            <img id="aetherrevolt-en163" class="card" src="/aetherrevolt/en/163.jpg">
-            <img id="aetherrevolt-en164" class="card" src="/aetherrevolt/en/164.jpg">
-            <img id="aetherrevolt-en165" class="card" src="/aetherrevolt/en/165.jpg">
-            <img id="aetherrevolt-en166" class="card" src="/aetherrevolt/en/166.jpg">
-            <img id="aetherrevolt-en167" class="card" src="/aetherrevolt/en/167.jpg">
-            <img id="aetherrevolt-en168" class="card" src="/aetherrevolt/en/168.jpg">
-            <img id="aetherrevolt-en169" class="card" src="/aetherrevolt/en/169.jpg">
-            <img id="aetherrevolt-en170" class="card" src="/aetherrevolt/en/170.jpg">
-            <img id="aetherrevolt-en171" class="card" src="/aetherrevolt/en/171.jpg">
-            <img id="aetherrevolt-en172" class="card" src="/aetherrevolt/en/172.jpg">
-            <img id="aetherrevolt-en173" class="card" src="/aetherrevolt/en/173.jpg">
-            <img id="aetherrevolt-en174" class="card" src="/aetherrevolt/en/174.jpg">
-            <img id="aetherrevolt-en175" class="card" src="/aetherrevolt/en/175.jpg">
-            <img id="aetherrevolt-en176" class="card" src="/aetherrevolt/en/176.jpg">
-            <img id="aetherrevolt-en177" class="card" src="/aetherrevolt/en/177.jpg">
-            <img id="aetherrevolt-en178" class="card" src="/aetherrevolt/en/178.jpg">
-            <img id="aetherrevolt-en179" class="card" src="/aetherrevolt/en/179.jpg">
-            <img id="aetherrevolt-en180" class="card" src="/aetherrevolt/en/180.jpg">
-            <img id="aetherrevolt-en181" class="card" src="/aetherrevolt/en/181.jpg">
-            <img id="aetherrevolt-en182" class="card" src="/aetherrevolt/en/182.jpg">
-            <img id="aetherrevolt-en183" class="card" src="/aetherrevolt/en/183.jpg">
-            <img id="aetherrevolt-en184" class="card" src="/aetherrevolt/en/184.jpg">
-            <img id="kaladesh-en001" class="card" src="/kaladesh/en/001.jpg">
-            <img id="kaladesh-en002" class="card" src="/kaladesh/en/002.jpg">
-            <img id="kaladesh-en003" class="card" src="/kaladesh/en/003.jpg">
-            <img id="kaladesh-en004" class="card" src="/kaladesh/en/004.jpg">
-            <img id="kaladesh-en005" class="card" src="/kaladesh/en/005.jpg">
-            <img id="kaladesh-en006" class="card" src="/kaladesh/en/006.jpg">
-            <img id="kaladesh-en007" class="card" src="/kaladesh/en/007.jpg">
-            <img id="kaladesh-en008" class="card" src="/kaladesh/en/008.jpg">
-            <img id="kaladesh-en009" class="card" src="/kaladesh/en/009.jpg">
-            <img id="kaladesh-en010" class="card" src="/kaladesh/en/010.jpg">
-            <img id="kaladesh-en011" class="card" src="/kaladesh/en/011.jpg">
-            <img id="kaladesh-en012" class="card" src="/kaladesh/en/012.jpg">
-            <img id="kaladesh-en013" class="card" src="/kaladesh/en/013.jpg">
-            <img id="kaladesh-en014" class="card" src="/kaladesh/en/014.jpg">
-            <img id="kaladesh-en015" class="card" src="/kaladesh/en/015.jpg">
-            <img id="kaladesh-en016" class="card" src="/kaladesh/en/016.jpg">
-            <img id="kaladesh-en017" class="card" src="/kaladesh/en/017.jpg">
-            <img id="kaladesh-en018" class="card" src="/kaladesh/en/018.jpg">
-            <img id="kaladesh-en019" class="card" src="/kaladesh/en/019.jpg">
-            <img id="kaladesh-en020" class="card" src="/kaladesh/en/020.jpg">
-            <img id="kaladesh-en021" class="card" src="/kaladesh/en/021.jpg">
-            <img id="kaladesh-en022" class="card" src="/kaladesh/en/022.jpg">
-            <img id="kaladesh-en023" class="card" src="/kaladesh/en/023.jpg">
-            <img id="kaladesh-en024" class="card" src="/kaladesh/en/024.jpg">
-            <img id="kaladesh-en025" class="card" src="/kaladesh/en/025.jpg">
-            <img id="kaladesh-en026" class="card" src="/kaladesh/en/026.jpg">
-            <img id="kaladesh-en027" class="card" src="/kaladesh/en/027.jpg">
-            <img id="kaladesh-en028" class="card" src="/kaladesh/en/028.jpg">
-            <img id="kaladesh-en029" class="card" src="/kaladesh/en/029.jpg">
-            <img id="kaladesh-en030" class="card" src="/kaladesh/en/030.jpg">
-            <img id="kaladesh-en031" class="card" src="/kaladesh/en/031.jpg">
-            <img id="kaladesh-en032" class="card" src="/kaladesh/en/032.jpg">
-            <img id="kaladesh-en033" class="card" src="/kaladesh/en/033.jpg">
-            <img id="kaladesh-en034" class="card" src="/kaladesh/en/034.jpg">
-            <img id="kaladesh-en035" class="card" src="/kaladesh/en/035.jpg">
-            <img id="kaladesh-en036" class="card" src="/kaladesh/en/036.jpg">
-            <img id="kaladesh-en037" class="card" src="/kaladesh/en/037.jpg">
-            <img id="kaladesh-en038" class="card" src="/kaladesh/en/038.jpg">
-            <img id="kaladesh-en039" class="card" src="/kaladesh/en/039.jpg">
-            <img id="kaladesh-en040" class="card" src="/kaladesh/en/040.jpg">
-            <img id="kaladesh-en041" class="card" src="/kaladesh/en/041.jpg">
-            <img id="kaladesh-en042" class="card" src="/kaladesh/en/042.jpg">
-            <img id="kaladesh-en043" class="card" src="/kaladesh/en/043.jpg">
-            <img id="kaladesh-en044" class="card" src="/kaladesh/en/044.jpg">
-            <img id="kaladesh-en045" class="card" src="/kaladesh/en/045.jpg">
-            <img id="kaladesh-en046" class="card" src="/kaladesh/en/046.jpg">
-            <img id="kaladesh-en047" class="card" src="/kaladesh/en/047.jpg">
-            <img id="kaladesh-en048" class="card" src="/kaladesh/en/048.jpg">
-            <img id="kaladesh-en049" class="card" src="/kaladesh/en/049.jpg">
-            <img id="kaladesh-en050" class="card" src="/kaladesh/en/050.jpg">
-            <img id="kaladesh-en051" class="card" src="/kaladesh/en/051.jpg">
-            <img id="kaladesh-en052" class="card" src="/kaladesh/en/052.jpg">
-            <img id="kaladesh-en053" class="card" src="/kaladesh/en/053.jpg">
-            <img id="kaladesh-en054" class="card" src="/kaladesh/en/054.jpg">
-            <img id="kaladesh-en055" class="card" src="/kaladesh/en/055.jpg">
-            <img id="kaladesh-en056" class="card" src="/kaladesh/en/056.jpg">
-            <img id="kaladesh-en057" class="card" src="/kaladesh/en/057.jpg">
-            <img id="kaladesh-en058" class="card" src="/kaladesh/en/058.jpg">
-            <img id="kaladesh-en059" class="card" src="/kaladesh/en/059.jpg">
-            <img id="kaladesh-en060" class="card" src="/kaladesh/en/060.jpg">
-            <img id="kaladesh-en061" class="card" src="/kaladesh/en/061.jpg">
-            <img id="kaladesh-en062" class="card" src="/kaladesh/en/062.jpg">
-            <img id="kaladesh-en063" class="card" src="/kaladesh/en/063.jpg">
-            <img id="kaladesh-en064" class="card" src="/kaladesh/en/064.jpg">
-            <img id="kaladesh-en065" class="card" src="/kaladesh/en/065.jpg">
-            <img id="kaladesh-en066" class="card" src="/kaladesh/en/066.jpg">
-            <img id="kaladesh-en067" class="card" src="/kaladesh/en/067.jpg">
-            <img id="kaladesh-en068" class="card" src="/kaladesh/en/068.jpg">
-            <img id="kaladesh-en069" class="card" src="/kaladesh/en/069.jpg">
-            <img id="kaladesh-en070" class="card" src="/kaladesh/en/070.jpg">
-            <img id="kaladesh-en071" class="card" src="/kaladesh/en/071.jpg">
-            <img id="kaladesh-en072" class="card" src="/kaladesh/en/072.jpg">
-            <img id="kaladesh-en073" class="card" src="/kaladesh/en/073.jpg">
-            <img id="kaladesh-en074" class="card" src="/kaladesh/en/074.jpg">
-            <img id="kaladesh-en075" class="card" src="/kaladesh/en/075.jpg">
-            <img id="kaladesh-en076" class="card" src="/kaladesh/en/076.jpg">
-            <img id="kaladesh-en077" class="card" src="/kaladesh/en/077.jpg">
-            <img id="kaladesh-en078" class="card" src="/kaladesh/en/078.jpg">
-            <img id="kaladesh-en079" class="card" src="/kaladesh/en/079.jpg">
-            <img id="kaladesh-en080" class="card" src="/kaladesh/en/080.jpg">
-            <img id="kaladesh-en081" class="card" src="/kaladesh/en/081.jpg">
-            <img id="kaladesh-en082" class="card" src="/kaladesh/en/082.jpg">
-            <img id="kaladesh-en083" class="card" src="/kaladesh/en/083.jpg">
-            <img id="kaladesh-en084" class="card" src="/kaladesh/en/084.jpg">
-            <img id="kaladesh-en085" class="card" src="/kaladesh/en/085.jpg">
-            <img id="kaladesh-en086" class="card" src="/kaladesh/en/086.jpg">
-            <img id="kaladesh-en087" class="card" src="/kaladesh/en/087.jpg">
-            <img id="kaladesh-en088" class="card" src="/kaladesh/en/088.jpg">
-            <img id="kaladesh-en089" class="card" src="/kaladesh/en/089.jpg">
-            <img id="kaladesh-en090" class="card" src="/kaladesh/en/090.jpg">
-            <img id="kaladesh-en091" class="card" src="/kaladesh/en/091.jpg">
-            <img id="kaladesh-en092" class="card" src="/kaladesh/en/092.jpg">
-            <img id="kaladesh-en093" class="card" src="/kaladesh/en/093.jpg">
-            <img id="kaladesh-en094" class="card" src="/kaladesh/en/094.jpg">
-            <img id="kaladesh-en095" class="card" src="/kaladesh/en/095.jpg">
-            <img id="kaladesh-en096" class="card" src="/kaladesh/en/096.jpg">
-            <img id="kaladesh-en097" class="card" src="/kaladesh/en/097.jpg">
-            <img id="kaladesh-en098" class="card" src="/kaladesh/en/098.jpg">
-            <img id="kaladesh-en099" class="card" src="/kaladesh/en/099.jpg">
-            <img id="kaladesh-en100" class="card" src="/kaladesh/en/100.jpg">
-            <img id="kaladesh-en101" class="card" src="/kaladesh/en/101.jpg">
-            <img id="kaladesh-en102" class="card" src="/kaladesh/en/102.jpg">
-            <img id="kaladesh-en103" class="card" src="/kaladesh/en/103.jpg">
-            <img id="kaladesh-en104" class="card" src="/kaladesh/en/104.jpg">
-            <img id="kaladesh-en105" class="card" src="/kaladesh/en/105.jpg">
-            <img id="kaladesh-en106" class="card" src="/kaladesh/en/106.jpg">
-            <img id="kaladesh-en107" class="card" src="/kaladesh/en/107.jpg">
-            <img id="kaladesh-en108" class="card" src="/kaladesh/en/108.jpg">
-            <img id="kaladesh-en109" class="card" src="/kaladesh/en/109.jpg">
-            <img id="kaladesh-en110" class="card" src="/kaladesh/en/110.jpg">
-            <img id="kaladesh-en111" class="card" src="/kaladesh/en/111.jpg">
-            <img id="kaladesh-en112" class="card" src="/kaladesh/en/112.jpg">
-            <img id="kaladesh-en113" class="card" src="/kaladesh/en/113.jpg">
-            <img id="kaladesh-en114" class="card" src="/kaladesh/en/114.jpg">
-            <img id="kaladesh-en115" class="card" src="/kaladesh/en/115.jpg">
-            <img id="kaladesh-en116" class="card" src="/kaladesh/en/116.jpg">
-            <img id="kaladesh-en117" class="card" src="/kaladesh/en/117.jpg">
-            <img id="kaladesh-en118" class="card" src="/kaladesh/en/118.jpg">
-            <img id="kaladesh-en119" class="card" src="/kaladesh/en/119.jpg">
-            <img id="kaladesh-en120" class="card" src="/kaladesh/en/120.jpg">
-            <img id="kaladesh-en121" class="card" src="/kaladesh/en/121.jpg">
-            <img id="kaladesh-en122" class="card" src="/kaladesh/en/122.jpg">
-            <img id="kaladesh-en123" class="card" src="/kaladesh/en/123.jpg">
-            <img id="kaladesh-en124" class="card" src="/kaladesh/en/124.jpg">
-            <img id="kaladesh-en125" class="card" src="/kaladesh/en/125.jpg">
-            <img id="kaladesh-en126" class="card" src="/kaladesh/en/126.jpg">
-            <img id="kaladesh-en127" class="card" src="/kaladesh/en/127.jpg">
-            <img id="kaladesh-en128" class="card" src="/kaladesh/en/128.jpg">
-            <img id="kaladesh-en129" class="card" src="/kaladesh/en/129.jpg">
-            <img id="kaladesh-en130" class="card" src="/kaladesh/en/130.jpg">
-            <img id="kaladesh-en131" class="card" src="/kaladesh/en/131.jpg">
-            <img id="kaladesh-en132" class="card" src="/kaladesh/en/132.jpg">
-            <img id="kaladesh-en133" class="card" src="/kaladesh/en/133.jpg">
-            <img id="kaladesh-en134" class="card" src="/kaladesh/en/134.jpg">
-            <img id="kaladesh-en135" class="card" src="/kaladesh/en/135.jpg">
-            <img id="kaladesh-en136" class="card" src="/kaladesh/en/136.jpg">
-            <img id="kaladesh-en137" class="card" src="/kaladesh/en/137.jpg">
-            <img id="kaladesh-en138" class="card" src="/kaladesh/en/138.jpg">
-            <img id="kaladesh-en139" class="card" src="/kaladesh/en/139.jpg">
-            <img id="kaladesh-en140" class="card" src="/kaladesh/en/140.jpg">
-            <img id="kaladesh-en141" class="card" src="/kaladesh/en/141.jpg">
-            <img id="kaladesh-en142" class="card" src="/kaladesh/en/142.jpg">
-            <img id="kaladesh-en143" class="card" src="/kaladesh/en/143.jpg">
-            <img id="kaladesh-en144" class="card" src="/kaladesh/en/144.jpg">
-            <img id="kaladesh-en145" class="card" src="/kaladesh/en/145.jpg">
-            <img id="kaladesh-en146" class="card" src="/kaladesh/en/146.jpg">
-            <img id="kaladesh-en147" class="card" src="/kaladesh/en/147.jpg">
-            <img id="kaladesh-en148" class="card" src="/kaladesh/en/148.jpg">
-            <img id="kaladesh-en149" class="card" src="/kaladesh/en/149.jpg">
-            <img id="kaladesh-en150" class="card" src="/kaladesh/en/150.jpg">
-            <img id="kaladesh-en151" class="card" src="/kaladesh/en/151.jpg">
-            <img id="kaladesh-en152" class="card" src="/kaladesh/en/152.jpg">
-            <img id="kaladesh-en153" class="card" src="/kaladesh/en/153.jpg">
-            <img id="kaladesh-en154" class="card" src="/kaladesh/en/154.jpg">
-            <img id="kaladesh-en155" class="card" src="/kaladesh/en/155.jpg">
-            <img id="kaladesh-en156" class="card" src="/kaladesh/en/156.jpg">
-            <img id="kaladesh-en157" class="card" src="/kaladesh/en/157.jpg">
-            <img id="kaladesh-en158" class="card" src="/kaladesh/en/158.jpg">
-            <img id="kaladesh-en159" class="card" src="/kaladesh/en/159.jpg">
-            <img id="kaladesh-en160" class="card" src="/kaladesh/en/160.jpg">
-            <img id="kaladesh-en161" class="card" src="/kaladesh/en/161.jpg">
-            <img id="kaladesh-en162" class="card" src="/kaladesh/en/162.jpg">
-            <img id="kaladesh-en163" class="card" src="/kaladesh/en/163.jpg">
-            <img id="kaladesh-en164" class="card" src="/kaladesh/en/164.jpg">
-            <img id="kaladesh-en165" class="card" src="/kaladesh/en/165.jpg">
-            <img id="kaladesh-en166" class="card" src="/kaladesh/en/166.jpg">
-            <img id="kaladesh-en167" class="card" src="/kaladesh/en/167.jpg">
-            <img id="kaladesh-en168" class="card" src="/kaladesh/en/168.jpg">
-            <img id="kaladesh-en169" class="card" src="/kaladesh/en/169.jpg">
-            <img id="kaladesh-en170" class="card" src="/kaladesh/en/170.jpg">
-            <img id="kaladesh-en171" class="card" src="/kaladesh/en/171.jpg">
-            <img id="kaladesh-en172" class="card" src="/kaladesh/en/172.jpg">
-            <img id="kaladesh-en173" class="card" src="/kaladesh/en/173.jpg">
-            <img id="kaladesh-en174" class="card" src="/kaladesh/en/174.jpg">
-            <img id="kaladesh-en175" class="card" src="/kaladesh/en/175.jpg">
-            <img id="kaladesh-en176" class="card" src="/kaladesh/en/176.jpg">
-            <img id="kaladesh-en177" class="card" src="/kaladesh/en/177.jpg">
-            <img id="kaladesh-en178" class="card" src="/kaladesh/en/178.jpg">
-            <img id="kaladesh-en179" class="card" src="/kaladesh/en/179.jpg">
-            <img id="kaladesh-en180" class="card" src="/kaladesh/en/180.jpg">
-            <img id="kaladesh-en181" class="card" src="/kaladesh/en/181.jpg">
-            <img id="kaladesh-en182" class="card" src="/kaladesh/en/182.jpg">
-            <img id="kaladesh-en183" class="card" src="/kaladesh/en/183.jpg">
-            <img id="kaladesh-en184" class="card" src="/kaladesh/en/184.jpg">
-            <img id="kaladesh-en185" class="card" src="/kaladesh/en/185.jpg">
-            <img id="kaladesh-en186" class="card" src="/kaladesh/en/186.jpg">
-            <img id="kaladesh-en187" class="card" src="/kaladesh/en/187.jpg">
-            <img id="kaladesh-en188" class="card" src="/kaladesh/en/188.jpg">
-            <img id="kaladesh-en189" class="card" src="/kaladesh/en/189.jpg">
-            <img id="kaladesh-en190" class="card" src="/kaladesh/en/190.jpg">
-            <img id="kaladesh-en191" class="card" src="/kaladesh/en/191.jpg">
-            <img id="kaladesh-en192" class="card" src="/kaladesh/en/192.jpg">
-            <img id="kaladesh-en193" class="card" src="/kaladesh/en/193.jpg">
-            <img id="kaladesh-en194" class="card" src="/kaladesh/en/194.jpg">
-            <img id="kaladesh-en195" class="card" src="/kaladesh/en/195.jpg">
-            <img id="kaladesh-en196" class="card" src="/kaladesh/en/196.jpg">
-            <img id="kaladesh-en197" class="card" src="/kaladesh/en/197.jpg">
-            <img id="kaladesh-en198" class="card" src="/kaladesh/en/198.jpg">
-            <img id="kaladesh-en199" class="card" src="/kaladesh/en/199.jpg">
-            <img id="kaladesh-en200" class="card" src="/kaladesh/en/200.jpg">
-            <img id="kaladesh-en201" class="card" src="/kaladesh/en/201.jpg">
-            <img id="kaladesh-en202" class="card" src="/kaladesh/en/202.jpg">
-            <img id="kaladesh-en203" class="card" src="/kaladesh/en/203.jpg">
-            <img id="kaladesh-en204" class="card" src="/kaladesh/en/204.jpg">
-            <img id="kaladesh-en205" class="card" src="/kaladesh/en/205.jpg">
-            <img id="kaladesh-en206" class="card" src="/kaladesh/en/206.jpg">
-            <img id="kaladesh-en207" class="card" src="/kaladesh/en/207.jpg">
-            <img id="kaladesh-en208" class="card" src="/kaladesh/en/208.jpg">
-            <img id="kaladesh-en209" class="card" src="/kaladesh/en/209.jpg">
-            <img id="kaladesh-en210" class="card" src="/kaladesh/en/210.jpg">
-            <img id="kaladesh-en211" class="card" src="/kaladesh/en/211.jpg">
-            <img id="kaladesh-en212" class="card" src="/kaladesh/en/212.jpg">
-            <img id="kaladesh-en213" class="card" src="/kaladesh/en/213.jpg">
-            <img id="kaladesh-en214" class="card" src="/kaladesh/en/214.jpg">
-            <img id="kaladesh-en215" class="card" src="/kaladesh/en/215.jpg">
-            <img id="kaladesh-en216" class="card" src="/kaladesh/en/216.jpg">
-            <img id="kaladesh-en217" class="card" src="/kaladesh/en/217.jpg">
-            <img id="kaladesh-en218" class="card" src="/kaladesh/en/218.jpg">
-            <img id="kaladesh-en219" class="card" src="/kaladesh/en/219.jpg">
-            <img id="kaladesh-en220" class="card" src="/kaladesh/en/220.jpg">
-            <img id="kaladesh-en221" class="card" src="/kaladesh/en/221.jpg">
-            <img id="kaladesh-en222" class="card" src="/kaladesh/en/222.jpg">
-            <img id="kaladesh-en223" class="card" src="/kaladesh/en/223.jpg">
-            <img id="kaladesh-en224" class="card" src="/kaladesh/en/224.jpg">
-            <img id="kaladesh-en225" class="card" src="/kaladesh/en/225.jpg">
-            <img id="kaladesh-en226" class="card" src="/kaladesh/en/226.jpg">
-            <img id="kaladesh-en227" class="card" src="/kaladesh/en/227.jpg">
-            <img id="kaladesh-en228" class="card" src="/kaladesh/en/228.jpg">
-            <img id="kaladesh-en229" class="card" src="/kaladesh/en/229.jpg">
-            <img id="kaladesh-en230" class="card" src="/kaladesh/en/230.jpg">
-            <img id="kaladesh-en231" class="card" src="/kaladesh/en/231.jpg">
-            <img id="kaladesh-en232" class="card" src="/kaladesh/en/232.jpg">
-            <img id="kaladesh-en233" class="card" src="/kaladesh/en/233.jpg">
-            <img id="kaladesh-en234" class="card" src="/kaladesh/en/234.jpg">
-            <img id="kaladesh-en235" class="card" src="/kaladesh/en/235.jpg">
-            <img id="kaladesh-en236" class="card" src="/kaladesh/en/236.jpg">
-            <img id="kaladesh-en237" class="card" src="/kaladesh/en/237.jpg">
-            <img id="kaladesh-en238" class="card" src="/kaladesh/en/238.jpg">
-            <img id="kaladesh-en239" class="card" src="/kaladesh/en/239.jpg">
-            <img id="kaladesh-en240" class="card" src="/kaladesh/en/240.jpg">
-            <img id="kaladesh-en241" class="card" src="/kaladesh/en/241.jpg">
-            <img id="kaladesh-en242" class="card" src="/kaladesh/en/242.jpg">
-            <img id="kaladesh-en243" class="card" src="/kaladesh/en/243.jpg">
-            <img id="kaladesh-en244" class="card" src="/kaladesh/en/244.jpg">
-          </div>
-<!--           <div class="card-es">
-            <img id="aetherrevolt-es001" class="card" src="/aetherrevolt/es/001.png">
-            <img id="aetherrevolt-es002" class="card" src="/aetherrevolt/es/002.png">
-            <img id="aetherrevolt-es003" class="card" src="/aetherrevolt/es/003.png">
-            <img id="aetherrevolt-es004" class="card" src="/aetherrevolt/es/004.png">
-            <img id="aetherrevolt-es005" class="card" src="/aetherrevolt/es/005.png">
-            <img id="aetherrevolt-es006" class="card" src="/aetherrevolt/es/006.png">
-            <img id="aetherrevolt-es007" class="card" src="/aetherrevolt/es/007.png">
-            <img id="aetherrevolt-es008" class="card" src="/aetherrevolt/es/008.png">
-            <img id="aetherrevolt-es009" class="card" src="/aetherrevolt/es/009.png">
-            <img id="aetherrevolt-es010" class="card" src="/aetherrevolt/es/010.png">
-            <img id="aetherrevolt-es011" class="card" src="/aetherrevolt/es/011.png">
-            <img id="aetherrevolt-es012" class="card" src="/aetherrevolt/es/012.png">
-            <img id="aetherrevolt-es013" class="card" src="/aetherrevolt/es/013.png">
-            <img id="aetherrevolt-es014" class="card" src="/aetherrevolt/es/014.png">
-            <img id="aetherrevolt-es015" class="card" src="/aetherrevolt/es/015.png">
-            <img id="aetherrevolt-es016" class="card" src="/aetherrevolt/es/016.png">
-            <img id="aetherrevolt-es017" class="card" src="/aetherrevolt/es/017.png">
-            <img id="aetherrevolt-es018" class="card" src="/aetherrevolt/es/018.png">
-            <img id="aetherrevolt-es019" class="card" src="/aetherrevolt/es/019.png">
-            <img id="aetherrevolt-es020" class="card" src="/aetherrevolt/es/020.png">
-            <img id="aetherrevolt-es021" class="card" src="/aetherrevolt/es/021.png">
-            <img id="aetherrevolt-es022" class="card" src="/aetherrevolt/es/022.png">
-            <img id="aetherrevolt-es023" class="card" src="/aetherrevolt/es/023.png">
-            <img id="aetherrevolt-es024" class="card" src="/aetherrevolt/es/024.png">
-            <img id="aetherrevolt-es025" class="card" src="/aetherrevolt/es/025.png">
-            <img id="aetherrevolt-es026" class="card" src="/aetherrevolt/es/026.png">
-            <img id="aetherrevolt-es027" class="card" src="/aetherrevolt/es/027.png">
-            <img id="aetherrevolt-es028" class="card" src="/aetherrevolt/es/028.png">
-            <img id="aetherrevolt-es029" class="card" src="/aetherrevolt/es/029.png">
-            <img id="aetherrevolt-es030" class="card" src="/aetherrevolt/es/030.png">
-            <img id="aetherrevolt-es031" class="card" src="/aetherrevolt/es/031.png">
-            <img id="aetherrevolt-es032" class="card" src="/aetherrevolt/es/032.png">
-            <img id="aetherrevolt-es033" class="card" src="/aetherrevolt/es/033.png">
-            <img id="aetherrevolt-es034" class="card" src="/aetherrevolt/es/034.png">
-            <img id="aetherrevolt-es035" class="card" src="/aetherrevolt/es/035.png">
-            <img id="aetherrevolt-es036" class="card" src="/aetherrevolt/es/036.png">
-            <img id="aetherrevolt-es037" class="card" src="/aetherrevolt/es/037.png">
-            <img id="aetherrevolt-es038" class="card" src="/aetherrevolt/es/038.png">
-            <img id="aetherrevolt-es039" class="card" src="/aetherrevolt/es/039.png">
-            <img id="aetherrevolt-es040" class="card" src="/aetherrevolt/es/040.png">
-            <img id="aetherrevolt-es041" class="card" src="/aetherrevolt/es/041.png">
-            <img id="aetherrevolt-es042" class="card" src="/aetherrevolt/es/042.png">
-            <img id="aetherrevolt-es043" class="card" src="/aetherrevolt/es/043.png">
-            <img id="aetherrevolt-es044" class="card" src="/aetherrevolt/es/044.png">
-            <img id="aetherrevolt-es045" class="card" src="/aetherrevolt/es/045.png">
-            <img id="aetherrevolt-es046" class="card" src="/aetherrevolt/es/046.png">
-            <img id="aetherrevolt-es047" class="card" src="/aetherrevolt/es/047.png">
-            <img id="aetherrevolt-es048" class="card" src="/aetherrevolt/es/048.png">
-            <img id="aetherrevolt-es049" class="card" src="/aetherrevolt/es/049.png">
-            <img id="aetherrevolt-es050" class="card" src="/aetherrevolt/es/050.png">
-            <img id="aetherrevolt-es051" class="card" src="/aetherrevolt/es/051.png">
-            <img id="aetherrevolt-es052" class="card" src="/aetherrevolt/es/052.png">
-            <img id="aetherrevolt-es053" class="card" src="/aetherrevolt/es/053.png">
-            <img id="aetherrevolt-es054" class="card" src="/aetherrevolt/es/054.png">
-            <img id="aetherrevolt-es055" class="card" src="/aetherrevolt/es/055.png">
-            <img id="aetherrevolt-es056" class="card" src="/aetherrevolt/es/056.png">
-            <img id="aetherrevolt-es057" class="card" src="/aetherrevolt/es/057.png">
-            <img id="aetherrevolt-es058" class="card" src="/aetherrevolt/es/058.png">
-            <img id="aetherrevolt-es059" class="card" src="/aetherrevolt/es/059.png">
-            <img id="aetherrevolt-es060" class="card" src="/aetherrevolt/es/060.png">
-            <img id="aetherrevolt-es061" class="card" src="/aetherrevolt/es/061.png">
-            <img id="aetherrevolt-es062" class="card" src="/aetherrevolt/es/062.png">
-            <img id="aetherrevolt-es063" class="card" src="/aetherrevolt/es/063.png">
-            <img id="aetherrevolt-es064" class="card" src="/aetherrevolt/es/064.png">
-            <img id="aetherrevolt-es065" class="card" src="/aetherrevolt/es/065.png">
-            <img id="aetherrevolt-es066" class="card" src="/aetherrevolt/es/066.png">
-            <img id="aetherrevolt-es067" class="card" src="/aetherrevolt/es/067.png">
-            <img id="aetherrevolt-es068" class="card" src="/aetherrevolt/es/068.png">
-            <img id="aetherrevolt-es069" class="card" src="/aetherrevolt/es/069.png">
-            <img id="aetherrevolt-es070" class="card" src="/aetherrevolt/es/070.png">
-            <img id="aetherrevolt-es071" class="card" src="/aetherrevolt/es/071.png">
-            <img id="aetherrevolt-es072" class="card" src="/aetherrevolt/es/072.png">
-            <img id="aetherrevolt-es073" class="card" src="/aetherrevolt/es/073.png">
-            <img id="aetherrevolt-es074" class="card" src="/aetherrevolt/es/074.png">
-            <img id="aetherrevolt-es075" class="card" src="/aetherrevolt/es/075.png">
-            <img id="aetherrevolt-es076" class="card" src="/aetherrevolt/es/076.png">
-            <img id="aetherrevolt-es077" class="card" src="/aetherrevolt/es/077.png">
-            <img id="aetherrevolt-es078" class="card" src="/aetherrevolt/es/078.png">
-            <img id="aetherrevolt-es079" class="card" src="/aetherrevolt/es/079.png">
-            <img id="aetherrevolt-es080" class="card" src="/aetherrevolt/es/080.png">
-            <img id="aetherrevolt-es081" class="card" src="/aetherrevolt/es/081.png">
-            <img id="aetherrevolt-es082" class="card" src="/aetherrevolt/es/082.png">
-            <img id="aetherrevolt-es083" class="card" src="/aetherrevolt/es/083.png">
-            <img id="aetherrevolt-es084" class="card" src="/aetherrevolt/es/084.png">
-            <img id="aetherrevolt-es085" class="card" src="/aetherrevolt/es/085.png">
-            <img id="aetherrevolt-es086" class="card" src="/aetherrevolt/es/086.png">
-            <img id="aetherrevolt-es087" class="card" src="/aetherrevolt/es/087.png">
-            <img id="aetherrevolt-es088" class="card" src="/aetherrevolt/es/088.png">
-            <img id="aetherrevolt-es089" class="card" src="/aetherrevolt/es/089.png">
-            <img id="aetherrevolt-es090" class="card" src="/aetherrevolt/es/090.png">
-            <img id="aetherrevolt-es091" class="card" src="/aetherrevolt/es/091.png">
-            <img id="aetherrevolt-es092" class="card" src="/aetherrevolt/es/092.png">
-            <img id="aetherrevolt-es093" class="card" src="/aetherrevolt/es/093.png">
-            <img id="aetherrevolt-es094" class="card" src="/aetherrevolt/es/094.png">
-            <img id="aetherrevolt-es095" class="card" src="/aetherrevolt/es/095.png">
-            <img id="aetherrevolt-es096" class="card" src="/aetherrevolt/es/096.png">
-            <img id="aetherrevolt-es097" class="card" src="/aetherrevolt/es/097.png">
-            <img id="aetherrevolt-es098" class="card" src="/aetherrevolt/es/098.png">
-            <img id="aetherrevolt-es099" class="card" src="/aetherrevolt/es/099.png">
-            <img id="aetherrevolt-es100" class="card" src="/aetherrevolt/es/100.png">
-            <img id="aetherrevolt-es101" class="card" src="/aetherrevolt/es/101.png">
-            <img id="aetherrevolt-es102" class="card" src="/aetherrevolt/es/102.png">
-            <img id="aetherrevolt-es103" class="card" src="/aetherrevolt/es/103.png">
-            <img id="aetherrevolt-es104" class="card" src="/aetherrevolt/es/104.png">
-            <img id="aetherrevolt-es105" class="card" src="/aetherrevolt/es/105.png">
-            <img id="aetherrevolt-es106" class="card" src="/aetherrevolt/es/106.png">
-            <img id="aetherrevolt-es107" class="card" src="/aetherrevolt/es/107.png">
-            <img id="aetherrevolt-es108" class="card" src="/aetherrevolt/es/108.png">
-            <img id="aetherrevolt-es109" class="card" src="/aetherrevolt/es/109.png">
-            <img id="aetherrevolt-es110" class="card" src="/aetherrevolt/es/110.png">
-            <img id="aetherrevolt-es111" class="card" src="/aetherrevolt/es/111.png">
-            <img id="aetherrevolt-es112" class="card" src="/aetherrevolt/es/112.png">
-            <img id="aetherrevolt-es113" class="card" src="/aetherrevolt/es/113.png">
-            <img id="aetherrevolt-es114" class="card" src="/aetherrevolt/es/114.png">
-            <img id="aetherrevolt-es115" class="card" src="/aetherrevolt/es/115.png">
-            <img id="aetherrevolt-es116" class="card" src="/aetherrevolt/es/116.png">
-            <img id="aetherrevolt-es117" class="card" src="/aetherrevolt/es/117.png">
-            <img id="aetherrevolt-es118" class="card" src="/aetherrevolt/es/118.png">
-            <img id="aetherrevolt-es119" class="card" src="/aetherrevolt/es/119.png">
-            <img id="aetherrevolt-es120" class="card" src="/aetherrevolt/es/120.png">
-            <img id="aetherrevolt-es121" class="card" src="/aetherrevolt/es/121.png">
-            <img id="aetherrevolt-es122" class="card" src="/aetherrevolt/es/122.png">
-            <img id="aetherrevolt-es123" class="card" src="/aetherrevolt/es/123.png">
-            <img id="aetherrevolt-es124" class="card" src="/aetherrevolt/es/124.png">
-            <img id="aetherrevolt-es125" class="card" src="/aetherrevolt/es/125.png">
-            <img id="aetherrevolt-es126" class="card" src="/aetherrevolt/es/126.png">
-            <img id="aetherrevolt-es127" class="card" src="/aetherrevolt/es/127.png">
-            <img id="aetherrevolt-es128" class="card" src="/aetherrevolt/es/128.png">
-            <img id="aetherrevolt-es129" class="card" src="/aetherrevolt/es/129.png">
-            <img id="aetherrevolt-es130" class="card" src="/aetherrevolt/es/130.png">
-            <img id="aetherrevolt-es131" class="card" src="/aetherrevolt/es/131.png">
-            <img id="aetherrevolt-es132" class="card" src="/aetherrevolt/es/132.png">
-            <img id="aetherrevolt-es133" class="card" src="/aetherrevolt/es/133.png">
-            <img id="aetherrevolt-es134" class="card" src="/aetherrevolt/es/134.png">
-            <img id="aetherrevolt-es135" class="card" src="/aetherrevolt/es/135.png">
-            <img id="aetherrevolt-es136" class="card" src="/aetherrevolt/es/136.png">
-            <img id="aetherrevolt-es137" class="card" src="/aetherrevolt/es/137.png">
-            <img id="aetherrevolt-es138" class="card" src="/aetherrevolt/es/138.png">
-            <img id="aetherrevolt-es139" class="card" src="/aetherrevolt/es/139.png">
-            <img id="aetherrevolt-es140" class="card" src="/aetherrevolt/es/140.png">
-            <img id="aetherrevolt-es141" class="card" src="/aetherrevolt/es/141.png">
-            <img id="aetherrevolt-es142" class="card" src="/aetherrevolt/es/142.png">
-            <img id="aetherrevolt-es143" class="card" src="/aetherrevolt/es/143.png">
-            <img id="aetherrevolt-es144" class="card" src="/aetherrevolt/es/144.png">
-            <img id="aetherrevolt-es145" class="card" src="/aetherrevolt/es/145.png">
-            <img id="aetherrevolt-es146" class="card" src="/aetherrevolt/es/146.png">
-            <img id="aetherrevolt-es147" class="card" src="/aetherrevolt/es/147.png">
-            <img id="aetherrevolt-es148" class="card" src="/aetherrevolt/es/148.png">
-            <img id="aetherrevolt-es149" class="card" src="/aetherrevolt/es/149.png">
-            <img id="aetherrevolt-es150" class="card" src="/aetherrevolt/es/150.png">
-            <img id="aetherrevolt-es151" class="card" src="/aetherrevolt/es/151.png">
-            <img id="aetherrevolt-es152" class="card" src="/aetherrevolt/es/152.png">
-            <img id="aetherrevolt-es153" class="card" src="/aetherrevolt/es/153.png">
-            <img id="aetherrevolt-es154" class="card" src="/aetherrevolt/es/154.png">
-            <img id="aetherrevolt-es155" class="card" src="/aetherrevolt/es/155.png">
-            <img id="aetherrevolt-es156" class="card" src="/aetherrevolt/es/156.png">
-            <img id="aetherrevolt-es157" class="card" src="/aetherrevolt/es/157.png">
-            <img id="aetherrevolt-es158" class="card" src="/aetherrevolt/es/158.png">
-            <img id="aetherrevolt-es159" class="card" src="/aetherrevolt/es/159.png">
-            <img id="aetherrevolt-es160" class="card" src="/aetherrevolt/es/160.png">
-            <img id="aetherrevolt-es161" class="card" src="/aetherrevolt/es/161.png">
-            <img id="aetherrevolt-es162" class="card" src="/aetherrevolt/es/162.png">
-            <img id="aetherrevolt-es163" class="card" src="/aetherrevolt/es/163.png">
-            <img id="aetherrevolt-es164" class="card" src="/aetherrevolt/es/164.png">
-            <img id="aetherrevolt-es165" class="card" src="/aetherrevolt/es/165.png">
-            <img id="aetherrevolt-es166" class="card" src="/aetherrevolt/es/166.png">
-            <img id="aetherrevolt-es167" class="card" src="/aetherrevolt/es/167.png">
-            <img id="aetherrevolt-es168" class="card" src="/aetherrevolt/es/168.png">
-            <img id="aetherrevolt-es169" class="card" src="/aetherrevolt/es/169.png">
-            <img id="aetherrevolt-es170" class="card" src="/aetherrevolt/es/170.png">
-            <img id="aetherrevolt-es171" class="card" src="/aetherrevolt/es/171.png">
-            <img id="aetherrevolt-es172" class="card" src="/aetherrevolt/es/172.png">
-            <img id="aetherrevolt-es173" class="card" src="/aetherrevolt/es/173.png">
-            <img id="aetherrevolt-es174" class="card" src="/aetherrevolt/es/174.png">
-            <img id="aetherrevolt-es175" class="card" src="/aetherrevolt/es/175.png">
-            <img id="aetherrevolt-es176" class="card" src="/aetherrevolt/es/176.png">
-            <img id="aetherrevolt-es177" class="card" src="/aetherrevolt/es/177.png">
-            <img id="aetherrevolt-es178" class="card" src="/aetherrevolt/es/178.png">
-            <img id="aetherrevolt-es179" class="card" src="/aetherrevolt/es/179.png">
-            <img id="aetherrevolt-es180" class="card" src="/aetherrevolt/es/180.png">
-            <img id="aetherrevolt-es181" class="card" src="/aetherrevolt/es/181.png">
-            <img id="aetherrevolt-es182" class="card" src="/aetherrevolt/es/182.png">
-            <img id="aetherrevolt-es183" class="card" src="/aetherrevolt/es/183.png">
-            <img id="aetherrevolt-es184" class="card" src="/aetherrevolt/es/184.png">
-          </div> -->
-        </div>
+        <div class="card-wrapper"></div>
       </div>
       <div class="wrapper-bottom">
         <div class="input-actions">
           <div class="field-colletors-number"></div>
-          <div class="field active" id="choose-aetherrevolt">
-            <img class="icon" src="/icons/aetherrevolt.png">
-          </div>
-          <div class="field" id="choose-kaladesh">
-            <img class="icon" src="/icons/kaladesh.png">
+          <div class="input-sets">
+<!--             <div class="field active" id="choose-aetherrevolt">
+              <img class="icon" src="/icons/aetherrevolt.png">
+            </div>
+            <div class="field" id="choose-kaladesh">
+              <img class="icon" src="/icons/kaladesh.png">
+            </div> -->
           </div>
           <div class="field clear">X</div>
         </div>
@@ -759,16 +144,19 @@
   <script type="text/javascript">
     var $shownEn
     var $shownEs
+    var set
     var $chooseKaladesh = document.querySelector('#choose-kaladesh')
     var $chooseAetherRevolt = document.querySelector('#choose-aetherrevolt')
-    var $fieldCollectorsNumber = document.querySelector('.field-colletors-number');
+    var $fieldCollectorsNumber = document.querySelector('.field-colletors-number')
     var inputs = document.querySelectorAll('.input-numbers .number')
-    var set = 'aetherrevolt'
     var $doc = document.documentElement
     var inputNumber = ''
     var $clear = document.querySelector('.input-actions .clear')
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    var clickName = isMobile ? 'touchstart' : 'click';
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    var clickName = isMobile ? 'touchstart' : 'click'
+
+    generateSet('aetherrevolt', 'en', 184)
+    generateSet('kaladesh', 'en', 244)
 
     for (var i = 0; i < inputs.length; i++) {
       (() => {
@@ -782,6 +170,44 @@
       })()
     }
 
+    function generateSet (name, language, n) {
+      // Append images
+      var $cardWrapper = document.querySelector('.card-wrapper')
+      var html = ''
+      var number, id, src
+      for (var i = 0; i < n; i++) {
+        number = i + 1
+        if (number < 10) number = '00' + number
+        if (10 <= number && number < 100) number = '0' + number
+        id = name + '-' + language + number
+        src = name + '/' + language + '/' + number + '.jpg'
+        html += '<img id="' + id + '" class="card" src="/' + src + '">'
+      }
+      $cardWrapper.innerHTML += html
+
+      // Append set selector
+      var isFirstSet = !document.querySelector('.input-sets .set')
+      var $setWrapper = document.querySelector('.input-sets')
+      html = [
+        '<div class="field set ' + (isFirstSet ? 'active' : '') + '" set="' + name + '" onclick="changeSet(event)">',
+          '<img class="icon" src="/icons/' + name + '.png">',
+        '</div>'
+      ].join('');
+      $setWrapper.innerHTML += html;
+
+      set = set || name
+    }
+
+    function changeSet (e) {
+      var newSet = e.target.getAttribute('set');
+      set = newSet
+      inputNumber = ''
+      change()
+      document.querySelector('.set.active').className = 'field set'
+      document.querySelector('.set[set="' + newSet + '"]').className = 'field set active'
+      flash(e.target)
+    }
+
     function flash (elem) {
       var oldClass = elem.className
       elem.className += ' clicked'
@@ -789,23 +215,6 @@
         elem.className = oldClass
       }, 100)
     }
-
-    $chooseAetherRevolt.addEventListener(clickName, function (e) {
-      $chooseAetherRevolt.className = 'field active'
-      $chooseKaladesh.className = 'field'
-      set = 'aetherrevolt'
-      inputNumber = ''
-      change()
-      flash(e.target)
-    })
-    $chooseKaladesh.addEventListener(clickName, function (e) {
-      $chooseKaladesh.className = 'field active'
-      $chooseAetherRevolt.className = 'field'
-      set = 'kaladesh'
-      inputNumber = ''
-      change()
-      flash(e.target)
-    })
 
     document.body.className = $doc.offsetWidth > $doc.offsetHeight
       ? 'portrait'
@@ -836,13 +245,13 @@
       var number = parseInt(inputNumber)
 
       if (isNaN(number)) {
-        $fieldCollectorsNumber.innerText = '';
+        $fieldCollectorsNumber.innerText = ''
         return
       }
       if (number < 10) number = '00' + number
       if (10 <= number && number < 100) number = '0' + number
 
-      $fieldCollectorsNumber.innerText = number;
+      $fieldCollectorsNumber.innerText = number
 
       var $imageEn = document.getElementById(set + '-en' + number)
       var $imageEs = document.getElementById(set + '-es' + number)
